@@ -8,19 +8,88 @@
 }
 
 body{
+    width: 100%;
     min-height: 100vh;
     color: #2e2e2e;
-    background-color: #fff;
-    font-family: 'Comic Neue', cursive;
+    background-color: #f5f7ee;
+    font-family: 'Comic Neue', sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.wrapper{
-    height: 10vh;
+.section{
+    position: relative;
+    height: 100vh;
     width: 100%;
-    border: 1px solid red;
+    overflow: hidden;
+    padding: 30px;
 }
 
+@media (min-width: 500px) {
+    .section{
+        height: 50rem;
+        width: 25rem;
+        border: 10px solid #2e2e2e;
+        border-radius: 40px;
+    }
+}
+
+.container{
+    width: 135%;
+    height: 25rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    border-radius: 30px 30px 50% 50%;
+    background-color: #1cc730;   
+}
+
+.cabecalho{
+    padding: 0 20px;
+}
+
+.menu-btn img{
+    width: 2rem;
+    cursor: pointer;
+    color: #2e2e2e;
+    padding-bottom: 10px;
+}
+
+.bem-vindo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bem-vindo h1{
+    font-size: 1.5rem;
+}
+
+.bem-vindo p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bem-vindo .img{
+    position: relative;
+}
+
+.bem-vindo .img img{
+    width: 5rem;
+}
+/* Como colocar um background atraz da imagem(no fundo) */
+.bem-vindo .img .fundo{ 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background-color: #faebd7;
+    z-index: -1;
+}
