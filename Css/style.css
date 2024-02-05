@@ -1,5 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+
+body{
+    min-height: 100vh;
+    color: #2e2e2e;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
+.screen-backdrop{
+    width: 100%;
+    height: 100%;
+    border-radius:150px;
+    background-color: #07cb35;
+}
+
+@media (min-width: 378px){
+    .wrapper{
+        height: 50rem;
+        width: 25rem;
+        border: 10px solid #2e2e2e;
+        border-radius: 30px;
+    }
 }
