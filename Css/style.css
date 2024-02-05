@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    
 }
 
 body{
     min-height: 100vh;
     color: #2e2e2e;
     background-color: #fff;
+    font-family: 'Comic Neue', cursive;
 
     display: flex;
     align-items: center;
@@ -18,22 +19,8 @@ body{
 }
 
 .wrapper{
-    height: 100vh;
+    height: 10vh;
     width: 100%;
+    border: 1px solid red;
 }
 
-.screen-backdrop{
-    width: 100%;
-    height: 100%;
-    border-radius:150px;
-    background-color: #07cb35;
-}
-
-@media (min-width: 378px){
-    .wrapper{
-        height: 50rem;
-        width: 25rem;
-        border: 10px solid #2e2e2e;
-        border-radius: 30px;
-    }
-}
