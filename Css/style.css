@@ -1,17 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic);
 
+::-webkit-scrollbar{
+    width: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
 }
 
-::-webkit-scrollbar{
-    width: 0;
-}
 
 body{
-    width: 100%;
     min-height: 100vh;
     color: #2e2e2e;
     background-color: #f5f7ee;
@@ -31,30 +31,19 @@ body{
     display: flex;
 }
 
-@media (min-width: 500px) {
+@media (min-width:768px) {
     .section{
         height: 50rem;
         width: 25rem;
-        border: 10px solid #2e2e2e;
         border-radius: 40px;
+        border: 10px solid #2e2e2e;    
     }
 }
 
 .section .tela {
     flex: 1;
     min-width: 100%;
-}
-
-.section.mostrar-tarefas .inicial-tela{
-    transform: translateX(-100%);
-}
-
-.section.mostrar-tarefas .tarefa-tela{
-    transform: translateX(-100%);
-}
-
-.section.mostrar-tarefas .container{
-    transform:  translate(-50%, -60%);
+    transition: all 0.3s;
 }
 
 .container{
@@ -65,9 +54,24 @@ body{
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
-    border-radius: 30px 30px 50% 50%;
-    background-color: #1cc730;   
+    border-radius: 0px 0px 50% 50%;
+    background-color: #1cc730;  
+    transition: all 0.3s; 
 }
+
+.section.mostrar-tarefas .inicial-tela{
+    transform: translateX(-100%);
+}
+
+.section.mostrar-tarefas .tarefas-tela{
+    transform: translateX(-100%);
+}
+
+.section.mostrar-tarefas .container{
+    transform:  translate(-50%, -60%);
+}
+
+
 
 .cabecalho{
     padding: 0 20px;
