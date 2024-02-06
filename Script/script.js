@@ -4,7 +4,7 @@ const menuBtn = document.querySelector(".menu-btn");
 
 
 const toggleScreen = () => {
-    Wrapper.classList.toggle("show-category");
+    wrapper.classList.toggle("show-category")
 };
 menuBtn.addEventListener("click", toggleScreen);
 backBtn.addEventListener("click", toggleScreen);
