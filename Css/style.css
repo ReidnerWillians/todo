@@ -184,3 +184,15 @@ body{
     width: 2rem;
     cursor: pointer;
 }
+
+.tarefas-secao .cabecalho{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarefas-secao .cabecalho img{
+    width: 2rem;
+    cursor: pointer;
+    color: #0e0e0f;
+}
