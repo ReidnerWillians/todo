@@ -45,6 +45,18 @@ body{
     min-width: 100%;
 }
 
+.section.mostrar-tarefas .inicial-tela{
+    transform: translateX(-100%);
+}
+
+.section.mostrar-tarefas .tarefa-tela{
+    transform: translateX(-100%);
+}
+
+.section.mostrar-tarefas .container{
+    transform:  translate(-50%, -60%);
+}
+
 .container{
     width: 135%;
     height: 25rem;
