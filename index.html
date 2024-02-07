@@ -60,8 +60,7 @@
             <div class="details">
               <p>8 tarefas</p>
               <h1>Pessoal</h1>
-            </div>
-            
+            </div>            
           </div>
           <div class="tasks-wrapper">
             <div class="tasks">
@@ -69,12 +68,39 @@
                 <label for="task" class="task">
                   <input type="checkbox" name="" id="task">
                   <span class="checkmark">
-                    <img src="Image/icons8-selecionado-50.png" alt="">
+                    <img src="Image/icons8-selecionado-50.png" alt="Tikar">
                   </span>
                   <p>Comprar um carro novo</p>
                 </label>
-              </div>
+                <div class="delete">
+                  <img src="Image/icons8-resíduos-50.png" alt="Deletar">
+                </div>                              
+              </div>              
             </div>
+          </div>
+        </div>
+        <div class="add-task-btn">
+          <img src="Image/icons8-mais-48.png" alt="Adicionar">
+        </div>
+        <div class="black-backdrop">
+          
+        </div>
+        <div class="add-task">
+          <div class="add-task-backdrop"></div>
+          <h1 class="heading">Adicionar Tarefa</h1>
+          <div class="input-group">
+            <label for="task-input">Tarefa</label>
+            <input type="text" id="task-input" required />
+          </div>
+          <div class="input-group">
+            <label for="category-select">Categoria</label>
+            <select name="" id="category-select">
+              <option value="personal">Pessoal</option>
+            </select>
+          </div>
+          <div class="btns">
+            <button class="cancel-btn">Cancelar</button>
+            <button class="add-btn">Adicionar</button>
           </div>
         </div>
       </div>
