@@ -314,9 +314,16 @@ body{
 }
 
 .task-wrapper .delete{
-   cursor: pointer;
-   visibility: hidden;
-   transition: all 0.3s;   
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50px;
+    color: #2e2e2e;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.031);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;   
 }
 
 .task-wrapper:hover .delete{
@@ -324,12 +331,17 @@ body{
     opacity: 1;    
 }
 
+.task-wrapper .delete:hover{
+    color: red;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .add-task-btn img{
     width: 1.8rem;
     background-color: #1cc730;
-    border-radius: 50%;
-   
+    border-radius: 50%;  
 }
+
 
 .add-task-btn{
     position: absolute;
@@ -337,11 +349,19 @@ body{
     right: 1rem;
     width: 3rem;
     height: 3rem;
+    border-radius: 50%;
     cursor: pointer; 
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1cc730;
     transition: all 0.3ms;
+}
+
+.add-task-btn.active{
+    z-index: 1;
+    bottom: 20rem;
+    transform: rotate(45deg);
 }
 
 .add-task-btn:hover{
@@ -354,6 +374,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 30px;
+    transition: all 0.3s;
 }
 
 .add-task.active{
@@ -370,7 +391,7 @@ body{
     margin-bottom: 20px;
 }
 
-.input-group .input-label{
+.input-group input .input-group label{
     display: block;
     width: 100%;
 }
@@ -407,10 +428,13 @@ body{
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1;
 }
 
 .btns button.add-btn{
     background-color: #1cc730;
+    color: #ffffff;
 }
 
 .add-task-backdrop{
@@ -422,7 +446,6 @@ body{
     height: 20rem;
     border-radius: 50% 50% 0 0;
     background-color: #f5f7ee;
-    border-top: 1px solid #06f706;
 }
 
 .black-backdrop{
@@ -435,6 +458,7 @@ body{
     background-color: #00000023;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.3s;
 }
 
 .black-backdrop.active{
