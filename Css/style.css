@@ -63,7 +63,7 @@ body{
     transform: translateX(-100%);
 }
 
-.wrapper.show-category .home-screen {
+.wrapper.show-category .category-screen {
     transform: translateX(-100%);
 }
 
@@ -207,16 +207,103 @@ body{
     color: #2e2e2e;
 }
 
-/* .category-details{
+.category-details{
     padding: 0 30px;
     margin-top: 7rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-} */
+}
 
- .category-screen .options img{
+.category-screen .options img{
     width: 2.5rem;
     cursor: pointer;
     color:#2e2e2e;
+}
+
+.category-details{
+    padding: 0 30px;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-details img{
+    width: 4rem;
+}
+
+.category-details .details p{
+    opacity: 0.6;
+}
+
+.tasks-wrapper{
+    padding: 0 30px;
+    margin-top: 1rem;
+    height: calc(100% - 12rem);
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.tasks{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: max-content;
+    cursor: pointer;
+}
+
+.task input{
+    display: none;
+}
+
+.task .checkmark{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    border: 1px solid #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task .checkmark img{
+    width: 1rem;
+    color: #2e2e2e;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.task:hover .checkmark img{
+    opacity: 1;
+    stroke-width: 3;
+}
+
+.task input:checked~.checkmark{
+    background-color: #2e2e2e;
+}
+
+.task input:checked~.checkmark img{
+    opacity: 1;
+    color: #fdfcfc;
+}
+
+.task input:checked~p{
+    text-decoration: line-through;
+    opacity: 0.6;
 }

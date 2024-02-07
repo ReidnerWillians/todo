@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
-     
+    <script src="Script/script.js" defer></script>  
     <title>ToDo</title>
 </head>
 <body>
 
-      <div class="wrapper show-category">
+      <div class="wrapper">
         <div class="screen-backdrop"></div>
-        <div class="home-screen screen">
+        <div class="screen home-screen">
           <div class="head-wrapper">
             <div class="menu-btn">
               <img src="Image/icons8-menu-hambúrguer-50.png" alt="menu">
@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="category-screen screen">
+        <div class="screen category-screen">
           <div class="head-wrapper">
             <div class="back-btn">
               <img src="Image/icons8-seta-longa-à-esquerda-50.png" alt="Voltar">
@@ -55,9 +55,30 @@
               <img src="Image/icons8-menu-2-32.png" alt="Seleção">
             </div>
           </div>
+          <div class="category-details">
+            <img src="Image/boy.png" alt="" id="category">
+            <div class="details">
+              <p>8 tarefas</p>
+              <h1>Pessoal</h1>
+            </div>
+            
+          </div>
+          <div class="tasks-wrapper">
+            <div class="tasks">
+              <div class="task-wrapper">
+                <label for="task" class="task">
+                  <input type="checkbox" name="" id="task">
+                  <span class="checkmark">
+                    <img src="Image/icons8-selecionado-50.png" alt="">
+                  </span>
+                  <p>Comprar um carro novo</p>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <script src="Script/script.js" defer></script> 
+      
 </body>
 </html>
