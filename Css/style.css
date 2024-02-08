@@ -237,19 +237,19 @@ body{
     opacity: 0.6;
 }
 
+.tasks{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .tasks-wrapper{
     padding: 0 30px;
     margin-top: 1rem;
     height: calc(100% - 12rem);
     padding-bottom: 20px;
     overflow: auto;
-}
-
-.tasks{
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .task-wrapper{
@@ -287,11 +287,11 @@ body{
     color: #2e2e2e;
     opacity: 0;
     transition: all 0.3s;
+    stroke-width: 3;
 }
 
 .task:hover .checkmark img{
-    opacity: 1;
-    stroke-width: 3;
+    opacity: 1;   
 }
 
 .task input:checked~.checkmark{
@@ -309,19 +309,16 @@ body{
 }
 
 .task-wrapper .delete img{
-    width: 1.2rem;
+    width: 2rem;
+    mix-blend-mode: multiply;
+    
+    
       
 }
 
 .task-wrapper .delete{
-    min-width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: 50px;
-    color: #2e2e2e;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.031);
-    opacity: 0;
+   
+    
     visibility: hidden;
     transition: all 0.3s;   
 }
