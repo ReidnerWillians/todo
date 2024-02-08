@@ -10,14 +10,15 @@ const toggleScreen = () => {
 menuBtn.addEventListener("click", toggleScreen);
 backBtn.addEventListener("click", toggleScreen);
 
+
 const addTaskBtn = document.querySelector(".add-task-btn");
 const addTaskForm = document.querySelector(".add-task");
 const blackBackdrop = document.querySelector(".black-backdrop");
 
 const toggleAddTaskForm = () => {
+    addTaskBtn.classList.toogle("active");
     addTaskForm.classList.toggle("active");
     blackBackdrop.classList.toogle("active");
-    addTaskBtn.classList.toogle("active");
 };
 
 addTaskBtn.addEventListener("click", toggleAddTaskForm);
